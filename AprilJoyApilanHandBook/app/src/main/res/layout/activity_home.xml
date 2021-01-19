@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imgSTILogo"
+        android:layout_width="244dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stilogo" />
+
+    <ImageButton
+        android:id="@+id/ibtnCalcu"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/ibtnHistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        app:srcCompat="@drawable/calculator" />
+
+    <ImageButton
+        android:id="@+id/ibtnSTIHimn"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:background="#00FFEB3B"
+        android:foreground="@drawable/hymn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtnHistory"
+        app:layout_constraintTop_toTopOf="@+id/ibtnHistory" />
+
+    <ImageButton
+        android:id="@+id/ibtnHistory"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:background="#00FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:foreground="@drawable/history"
+        app:layout_constraintEnd_toStartOf="@+id/ibtnSTIHimn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtnCalcu"
+        app:layout_constraintTop_toTopOf="@+id/ibtnCalcu" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="380dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSTILogo" />
+
+    <ImageButton
+        android:id="@+id/ibtnWebsite"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:foreground="@drawable/website"
+        app:layout_constraintStart_toStartOf="@+id/ibtnCalcu"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnCalcu" />
+
+    <ImageButton
+        android:id="@+id/ibtnVideo"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:background="#00FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:foreground="@drawable/video"
+        app:layout_constraintEnd_toStartOf="@+id/ibtnQRCG"
+        app:layout_constraintStart_toEndOf="@+id/ibtnWebsite"
+        app:layout_constraintTop_toTopOf="@+id/ibtnWebsite" />
+
+    <ImageButton
+        android:id="@+id/ibtnQRCG"
+        android:layout_width="68dp"
+        android:layout_height="61dp"
+        android:background="#00FFEB3B"
+        android:backgroundTint="#FFEB3B"
+        android:foreground="@drawable/qrcode"
+        app:layout_constraintEnd_toEndOf="@+id/ibtnSTIHimn"
+        app:layout_constraintTop_toTopOf="@+id/ibtnVideo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
